@@ -1,5 +1,15 @@
 ## Crypto Prices
 
+### Overview
+
+A Spring Boot application that uses Thymeleaf templating engine to render a line chart of some cryptocurrency prices.
+
+### Dependencies
+- Gradle
+- JDK 11
+
+### Instructions
+
 In order to view a line chart displaying prices of your favorite cryptocurrencies for the months of May and June in 2021,
 first build the jar file by running the following command:
 
