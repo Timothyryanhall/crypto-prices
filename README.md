@@ -19,4 +19,4 @@ Then run the jar with the following command:
 
 `java -jar build/libs/crypto-prices-0.0.1-SNAPSHOT.jar`
 
-And now you can navigate to `localhost:8080` to improve your knowledge of cryptocurrency prices
+And now you can navigate to `localhost:8080` to improve your knowledge of cryptocurrency prices! Enjoy!
