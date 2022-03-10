@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Crypto Prices</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Crypto Prices</h1>
+<h3>The line chart below displays the prices for the following cryptocurrencies:</h3>
+<ul>
+    <li style="color:red">BTC</li>
+    <li style="color:green">ETH</li>
+    <li style="color:blue">LTC</li>
+    <li style="color:black">BCH</li>
+</ul>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+<canvas id="myChart" style="width:100%;max-width:1600px"></canvas>
+
+<script th:inline="javascript">
+/*<![CDATA[*/
+var xValues = /*[[${dates}]]*/;
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      data: /*[[${btc}]]*/,
+      borderColor: "red",
+      fill: false
+    },{
+      data: /*[[${eth}]]*/,
+      borderColor: "green",
+      fill: false
+    },{
+      data: /*[[${ltc}]]*/,
+      borderColor: "blue",
+      fill: false
+    },{
+      data: /*[[${bch}]]*/,
+      borderColor: "black",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+/*]]>*/
+</script>
