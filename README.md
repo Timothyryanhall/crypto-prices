@@ -4,9 +4,9 @@
 
 A Spring Boot application that uses Thymeleaf templating engine to render a line chart of some cryptocurrency prices.
 
-### Dependencies
+### What you'll need
 - Gradle
-- JDK 11
+- JDK
 
 ### Instructions
 
