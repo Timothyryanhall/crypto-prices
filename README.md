@@ -6,7 +6,7 @@ A Spring Boot application that uses Thymeleaf templating engine to render a line
 
 ### What you'll need
 - Gradle
-- JDK
+- JRE
 
 ### Instructions
 
